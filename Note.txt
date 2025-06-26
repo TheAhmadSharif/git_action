@@ -1,0 +1,7 @@
+–––––––––– Git Action
+
+
+I would like to learn. Teach me in naive language
+
+
+Can I deploy code to my server directly directly from my repository

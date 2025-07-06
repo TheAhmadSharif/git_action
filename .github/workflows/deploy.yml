@@ -18,8 +18,8 @@ jobs:
         mkdir -p ~/.ssh
         echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H 165.227.160.158 >> ~/.ssh/known_hosts
+        ssh-keyscan -H 95.217.158.219 >> ~/.ssh/known_hosts
 
     - name: Deploy code via rsync
       run: |
-        rsync -avz --delete ./ root@165.227.160.158:/var/www/jamamattar/public_html/git_action
+        rsync -avz --delete ./ root@95.217.158.219:/var/www/jamamattar/public_html/git_action

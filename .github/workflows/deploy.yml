@@ -16,7 +16,7 @@ jobs:
     - name: Setup SSH Key
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_rsa
+        echo "${{ secrets.GITLAB_CI_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H 95.217.158.219 >> ~/.ssh/known_hosts
 
